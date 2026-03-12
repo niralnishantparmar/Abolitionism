@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+
+    --background: 28 15% 7%;
+    --foreground: 38 20% 90%;
+    --card: 28 12% 11%;
+    --card-foreground: 38 20% 90%;
+    --popover: 28 12% 11%;
+    --popover-foreground: 38 20% 90%;
+    --primary: 38 75% 55%;
+    --primary-foreground: 28 15% 7%;
+    --secondary: 28 8% 17%;
+    --secondary-foreground: 38 15% 78%;
+    --muted: 28 6% 14%;
+    --muted-foreground: 30 10% 52%;
+    --accent: 14 65% 48%;
+    --accent-foreground: 38 20% 95%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 28 10% 18%;
+    --input: 28 10% 18%;
+    --ring: 38 75% 55%;
+    --chart-1: 38 75% 55%;
+    --chart-2: 14 65% 48%;
+    --chart-3: 28 15% 40%;
+    --chart-4: 46 65% 62%;
+    --chart-5: 20 55% 45%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * { @apply border-border outline-ring/50; }
+  body { @apply bg-background text-foreground; }
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: hsl(28 12% 11%); }
+::-webkit-scrollbar-thumb { background: hsl(28 10% 28%); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(38 75% 55%); }
